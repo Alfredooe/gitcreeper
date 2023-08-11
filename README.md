@@ -17,7 +17,7 @@ Requires Python 3.6+
 ## Usage
 
 ```javascript
-python3 gitripper.py -a username -o output.txt
+python3 gitcreeper.py -a username -o output.txt
 
   ▄████  ██▓▄▄▄█████▓ ▄████▄   ██▀███  ▓█████ ▓█████  ██▓███  ▓█████  ██▀███  
  ██▒ ▀█▒▓██▒▓  ██▒ ▓▒▒██▀ ▀█  ▓██ ▒ ██▒▓█   ▀ ▓█   ▀ ▓██░  ██▒▓█   ▀ ▓██ ▒ ██▒
