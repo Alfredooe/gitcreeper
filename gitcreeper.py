@@ -91,11 +91,11 @@ OSINT Tool to scrape emails from Github commits by @Alfredo
     if args.repo:
         print(f"Scanning repo: {args.repo}")
         try:
-            commits = get_repo_commits(repo)
+            commits = get_repo_commits(args.repo)
             emails = get_commit_emails(commits)
             found_emails.extend(emails)
         except Exception:
-            print(f"Error scanning: {repo}")
+            print(f"Error scanning: {args.repo}")
 
     found_emails = list(set(found_emails))
 
