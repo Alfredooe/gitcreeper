@@ -4,7 +4,7 @@
 OSINT Tool automating scraping emails from user commits. For contacting maintainers, nothing else.
 
 
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 
 ## Features
