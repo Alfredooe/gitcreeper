@@ -10,7 +10,7 @@ def get_repos(github_username: str) -> list:
     response = requests.get(url)
     repos = json.loads(response.text)
     for repo in repos:
-        yield repo["ssh_url"]
+        yield repo["clone_url"]
 
 
 def get_repo_commits(repo_url: str) -> list:
