@@ -12,6 +12,7 @@ Requires Python 3.6+
 - -a Scrape Account
 - -r Scrape Repo
 - -o Save To File
+- --similar-to <username> [username...]: Find emails with local parts (before "@") similar to the provided username(s). Uses Levenshtein distance for comparison. Similar emails are listed separately in the output.
 
 
 ## Usage
@@ -48,7 +49,14 @@ Alternatively, if you don't need the emails to be saved to a file, you can just 
 
 ```javascript
 python3 gitcreeper.py -a username -o output.txt
+```
 
+To also find emails similar to one or more usernames:
+```javascript
+python3 gitcreeper.py -a SomeUser --similar-to user1 user2 -o output.txt
+```
+
+```javascript
   ▄████  ██▓▄▄▄█████▓ ▄████▄   ██▀███  ▓█████ ▓█████  ██▓███  ▓█████  ██▀███  
  ██▒ ▀█▒▓██▒▓  ██▒ ▓▒▒██▀ ▀█  ▓██ ▒ ██▒▓█   ▀ ▓█   ▀ ▓██░  ██▒▓█   ▀ ▓██ ▒ ██▒
 ▒██░▄▄▄░▒██▒▒ ▓██░ ▒░▒▓█    ▄ ▓██ ░▄█ ▒▒███   ▒███   ▓██░ ██▓▒▒███   ▓██ ░▄█ ▒
